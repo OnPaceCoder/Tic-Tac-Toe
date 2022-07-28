@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { Card, CardBody, Container, Button, Col, Row } from "reactstrap";
-import { FaCircle } from "react-icons/fa";
+
 
 const itemArray = new Array(9).fill("empty");
 
@@ -77,7 +77,7 @@ function App() {
       setWinMessage(`${itemArray[0]} won`);
     } else if (
       itemArray[0] === itemArray[3] &&
-      itemArray[6] === itemArray[6] &&
+      itemArray[3] === itemArray[6] &&
       itemArray[0] !== "empty"
     ) {
       setWinMessage(`${itemArray[0]} won`);
